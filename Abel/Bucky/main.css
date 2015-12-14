@@ -1,0 +1,8 @@
+/*old css*/
+#tuna{color: firebrick;}/*we can have id's': anyhing with the id name tuna will be colored red*/
+.tunaclass{color:blueviolet;}
+p.tunaclass{color:orange;} /*I want to apply this style to anything that has
+                            tuna class but it has to be a paragraph*/
+
+/*New css3 -> has all the stuff above and more*/
+p[name]{color: fuchsia;} /*Any paragraph with attribute name*/
