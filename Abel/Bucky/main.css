@@ -5,4 +5,10 @@ p.tunaclass{color:orange;} /*I want to apply this style to anything that has
                             tuna class but it has to be a paragraph*/
 
 /*New css3 -> has all the stuff above and more*/
-p[name]{color: fuchsia;} /*Any paragraph with attribute name*/
+p[name]{color: fuchsia;} /*Any paragraph with attribute name*/ /*Can be any elements (p,h etc.) and any attribue(name,etc.)*/
+p[name="joe"]{color:aqua;} /*Any paragraph with attribute name with vallue "joe"*/
+
+/*Usig regular expresion in css3*/
+/*p[name^="bacon"]{color:gold;}!* '^': any value begining with bacon*!*/
+/*p[name$="bacon"]{color:gold;}!* '$': any value that ends with bacon*!*/
+p[name*="bacon"]{color:gold;}/* '*': As long as bacon is anywhere in the value*/
