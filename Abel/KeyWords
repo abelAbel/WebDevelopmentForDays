@@ -1,0 +1,5 @@
+Responsive Web design -> make the website adaptable to different platform of devise
+Low resolution device -> Mobile: 480px and lower  (After horizontal value)
+Medium resolution device -> Tablet: 481 px to 1023 px
+High resolution device -> Desktop: 1024px and higher
+One media  Query for each of our device.
