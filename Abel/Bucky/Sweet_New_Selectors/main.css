@@ -1,1 +1,7 @@
-p[class="b"]{color: aqua;}
+/*p[class="b"]{color: aqua;}*/
+/*Selectore '>,+,~'*/
+div > p {color:red;} /*Going to effect any paragraph 'p' that has 'div' as it's parent
+               '>' only effect the paragraph where body is parent(not grandparent)*/
+/*(Must have the same parent) effect the second element that imediatly follows the first*/
+/*p.son + p{color:blue}!*Whenever we have a paragraph(p) that follows another paragraph(p) with class son do that color *!*/
+p.son ~ p{color:aqua}/*Similar to '+', but don't have to imediatly follow p with class name son*/

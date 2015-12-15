@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> <!--Goes all the information: Title, CSS styles, Scripts-->
+    <meta charset="UTF-8"> <!--to define the charater set(self enclosed tag, just need one)
+                            charset: How your browser interpret characters
+                            meta(This one only one required):keywords, description about wbs,
+                            like credit at end of movie(Don't need, but nice to have-->
+    <title>ABEL WEBSITE</title>
+    <link rel="stylesheet" href="main.css"><!--link: reference to an outside file
+                                    rel(relative): how is this link related the website
+                                     The file we are to be telling you is a stylesheet for this webpage
+                                     href: What file is it?(main.css:file we are going to be creating)-->
+</head>
+<body> <!--What the user sees: Images, paragraphs, Text, where most of the stuff goes-->
+
+    <div id="big_wrapper"><!--Use this 'div' so we can center our website later on-->
+        <header id="top_header"> <!---->
+            <h1>Welcome Home</h1>
+        </header>
+
+        <nav id="top_menu"><!--main navigation for the website-->
+            <ul><!--Unordered list-->
+                <li>HOME</li><!--List items-->
+                <li>TUTTORIAL</li><!--List items-->
+                <li>BUY</li><!--List items-->
+            </ul>
+
+        </nav> <!--Whenever you have main navigation in html5, but it between nav tag -->
+
+        <section id="main_section"><!--(Main content) add all the bottom body stuff in here-->
+            <article> <!--Way to group similar information together-->
+                <!--each article have their own layout-->
+                <header><!--Tittle or subtitle or caption of article-->
+                    <hgroup><!--when have more then 1 header <h> tags, have to group them in hgroup, so html5 don't get confuzed-->
+                        <h1>Title of Article</h1>
+                        <h2>Subtitle for Artical!</h2>
+                    </hgroup>
+                </header>
+                <p>This is awsom</p> <!--Paragraph-->
+                <footer>
+                    <p> >Writen by Abel</p>
+                </footer>
+            </article>
+
+            <article> <!--Way to group similar information together-->
+                <!--each article have their own layout-->
+                <header><!--Tittle or subtitle or caption of article-->
+                    <hgroup><!--when have more then 1 header <h> tags, have to group them in hgroup, so html5 don't get confuzed-->
+                        <h1>Title of Article 2</h1>
+                        <h2>Subtitle for Artical 2!</h2>
+                    </hgroup>
+                </header>
+                <p>This is awsom 2</p> <!--Paragraph-->
+                <footer>
+                    <p> >Writen by Abel 2</p>
+                </footer>
+            </article>
+        </section>
+
+        <aside id="side_news"><!--For side bar section, does not positon, Describe info in it -->
+            <h4> News</h4>
+            Bucky has a new dog!
+        </aside>
+
+        <footer id="the_footer"><!--Copyright, the bottom part of the website-->
+            !Copyright abelamadou 2015!
+        </footer>
+    </div>
+
+</body>
+</html>
