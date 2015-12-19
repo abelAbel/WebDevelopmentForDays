@@ -5,3 +5,13 @@ Low resolution device -> Mobile: 480px and lower  (After horizontal value)
 Medium resolution device -> Tablet: 481 px to 1023 px
 High resolution device -> Desktop: 1024px and higher
 One media  Query for each of our device.
+
+
+----------------------------------------
+<br/> -> like pressing enter
+<hr/> -> makes horizontal line
+<strong></strong> ->make the word in between bold
+<em></em> -> Italize the word in between
+<a href="locationofpage"></a> -> anchor tag, seround the word that need to be clicked to go on another page; have to add attribute e.g <a href="">
+<img src="" alt=""/>
+<audio src=""></audio>
