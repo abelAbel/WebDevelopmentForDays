@@ -1,0 +1,29 @@
+body{
+    text-align: center;
+}
+#box {
+    display: block;
+    border: 5px solid green;
+    width: 500px;
+    align-content: center;
+    margin: 50px auto;
+    padding: 15px;
+    background: yellow;
+     /*have to add transition so it can intrepulate the inbetweens, need to add start and end point;
+     need point A and B and it feel the inbetween and tell it how long it is going to take*/
+    -webkit-transition: -webkit-transform 1s;/*What property you want to animate , how long its going for*/;
+    /*-webkit-transition:background 1s;!*What property you want to animate , how long its going for*!;*/
+
+}
+/*to make effect when hover on element, add the ':hover'*/
+#box:hover{
+    /*What do you want to change */
+    -webkit-transform:rotate(45deg);
+    /*-webkit-transform:scale(1.5);*/
+    background: purple;
+}
+#text{
+    font: bold 30px Tamoha;
+    text-shadow: rgb(0, 255, 0) 3px 3px 5px;/*Don't use the webkit*/
+
+}
