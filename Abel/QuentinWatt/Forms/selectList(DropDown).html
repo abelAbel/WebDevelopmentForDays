@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vid 46</title>
+</head>
+<body>
+    <form action="" method="get">
+        Pick a food:
+        <select name="food" multiple size="5"><!--Now have select list on the page
+                            'multiple'(show more then one option at a time ):don't have to set it equal to anything(=multiple), but we can
+                            'size'(goes with multiple):specifies how many item can the user see at a time-->
+            <option value="apple"> Apple </option><!--'value'(So we can send it to the sever and know what the user have selected) should be different from each option-->
+            <option value="cake"> Cake </option>
+            <optgroup label="Salty food"><!--Can group them or not-->
+                <option value="patato_chips">Potato chips </option>
+                <option value="popcorn">Popcorn</option>
+                <option value="peanuts">Peanuts</option>
+            </optgroup>
+            <optgroup label="Delicious Food">
+                <option value="nachos" selected = "selected">Nachos</option> <!--'selected' to make it the default option that is selected-->
+                <option value="brownie_pie"> Brownie pie </option>
+            </optgroup>
+        </select>
+    </form>
+</body>
+</html>

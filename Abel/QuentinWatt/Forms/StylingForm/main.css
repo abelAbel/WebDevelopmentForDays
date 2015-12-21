@@ -1,0 +1,38 @@
+fieldset{
+    width: 300px;
+}
+legend{
+    font-weight: bolder;
+}
+.personal_info{
+    color: blue;
+    border: 2px solid red;
+    background: gold;
+}
+.personal_info label{
+    float: left;
+    color: aqua;
+    width: 100px;
+    text-align: right;
+    /*border:2px solid purple;*/
+    /*margin-right:10px ;*/
+}
+input{
+    border: 2px solid purple;
+    background: orangered;
+}
+[name]{
+    border: 2px groove orangered;
+    background: purple;
+    color: red;
+
+}
+#hobbies{
+    border: 2px dashed yellow;
+    color: red;
+    background: blue;
+}
+
+#hobbies label{
+    color: ghostwhite;
+}

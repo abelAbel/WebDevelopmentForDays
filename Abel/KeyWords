@@ -6,7 +6,8 @@ Medium resolution device -> Tablet: 481 px to 1023 px
 High resolution device -> Desktop: 1024px and higher
 One media  Query for each of our device.
 class vs. id -> ID have to be unique to each elements(only for specif elements( if want to style one element), for javascript); Class(different elements can have the same class) when want to style more then one element using with the same effect.
-
+Form -> An area we can add form element on webpage that allows us to gain data from users; e.g password and name section
+It ties in with java script or php (Scripting languages), can't use the data we get from user unless we use scripting language
 
 ----------------Tags(elements)------------------------
 <br/> -> like pressing enter
@@ -18,3 +19,4 @@ class vs. id -> ID have to be unique to each elements(only for specif elements( 
 <audio src=""></audio>
 <div> </div> -> it's a block level element (top to bottome) [To make a big block on the page]
 <span></span> -> it's an in line element (left to right) [To change a word in a sentence]
+<form action=""> </form>
