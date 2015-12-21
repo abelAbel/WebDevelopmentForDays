@@ -20,3 +20,20 @@ It ties in with java script or php (Scripting languages), can't use the data we 
 <div> </div> -> it's a block level element (top to bottome) [To make a big block on the page]
 <span></span> -> it's an in line element (left to right) [To change a word in a sentence]
 <form action=""> </form>
+
+=================Shortcut=========================
+div#mouse.dad[name=joe age=12]'Then press tab' -> <div id="mouse" class="dad" name="joe" age="12"></div>
+div>p>ul>li'Then press tab' ->  <div>
+                                   <p>
+                                       <ul>
+                                           <li></li>
+                                       </ul>
+                                   </p>
+                               </div>
+ul>li*5>a[href=#]'Then press tab' ->     <ul>
+                                              <li><a href="#"></a></li>
+                                              <li><a href="#"></a></li>
+                                              <li><a href="#"></a></li>
+                                              <li><a href="#"></a></li>
+                                              <li><a href="#"></a></li>
+                                          </ul>
