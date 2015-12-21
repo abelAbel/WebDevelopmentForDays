@@ -1,0 +1,12 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+header,nav,article,section,footer,aside{
+    display: block;
+}
+/*centering website*/
+.container{
+
+}

@@ -5,9 +5,10 @@ Low resolution device -> Mobile: 480px and lower  (After horizontal value)
 Medium resolution device -> Tablet: 481 px to 1023 px
 High resolution device -> Desktop: 1024px and higher
 One media  Query for each of our device.
+class vs. id -> ID have to be unique to each elements(only for specif elements( if want to style one element), for javascript); Class(different elements can have the same class) when want to style more then one element using with the same effect.
 
 
-----------------------------------------
+----------------Tags(elements)------------------------
 <br/> -> like pressing enter
 <hr/> -> makes horizontal line
 <strong></strong> ->make the word in between bold
@@ -15,3 +16,5 @@ One media  Query for each of our device.
 <a href="locationofpage"></a> -> anchor tag, seround the word that need to be clicked to go on another page; have to add attribute e.g <a href="">
 <img src="" alt=""/>
 <audio src=""></audio>
+<div> </div> -> it's a block level element (top to bottome) [To make a big block on the page]
+<span></span> -> it's an in line element (left to right) [To change a word in a sentence]
