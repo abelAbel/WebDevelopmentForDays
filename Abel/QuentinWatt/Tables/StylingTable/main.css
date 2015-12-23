@@ -1,0 +1,30 @@
+table{
+    border:2px solid red;/*adding our own boarder; Only adds boarder around the outside of the table*/
+    border-collapse:collapse;/*To colapse the boarder so it doesn' look thick and repeat itself when using 'boarder' in table tag*/
+}
+th,td { /* ',' mean going to select more then one tag at a time*/
+    border: 2px solid red;
+    padding: 10px;/*Hellping make it more readable*/
+    /*text-align: left;*/
+}
+caption{
+    border: 10px dotted purple;
+    font-weight: bolder;
+    font-style: italic;
+    text-decoration: underline;
+    background: yellow;
+}
+thead{
+    background-color: blue;
+}
+tbody tr:nth-child(even){
+    background: orange;
+}
+tbody tr:nth-child(odd){
+    background: green;
+}
+tfoot{
+    background: yellow;
+    text-align: center;
+    padding: 10px;
+}

@@ -59,3 +59,10 @@ body{
     padding: 5px;
     font: bold 14px Tahoma;
 }
+#main_section{
+    float: left;
+    /*background: orange;*/
+    width: 660px;
+    margin:30px;
+}
+

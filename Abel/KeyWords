@@ -5,3 +5,49 @@ Low resolution device -> Mobile: 480px and lower  (After horizontal value)
 Medium resolution device -> Tablet: 481 px to 1023 px
 High resolution device -> Desktop: 1024px and higher
 One media  Query for each of our device.
+class vs. id -> ID have to be unique to each elements(only for specif elements( if want to style one element), for javascript); Class(different elements can have the same class) when want to style more then one element using with the same effect.
+Form -> An area we can add form element on webpage that allows us to gain data from users; e.g password and name section
+It ties in with java script or php (Scripting languages), can't use the data we get from user unless we use scripting language
+css 'position' element (left right top bottom)-> used to take an element without removing it from it's natural flow of the page and push and pull it and does not effect the other elements on page.
+  when you want to use 'absolute' and want it to be absolute to parent and not body, have to make the parent 'relative'
+
+-------------------------Links to helper generators etc..---------------------------------------------
+https://www.google.com/fonts/ -> to import and  use different kind of fonts in your system; to import '@import url('link for font')' e.g @import url(https://fonts.googleapis.com/css?family=Dancing+Script);
+http://cssreset.com/ -> website where you can find how to properly fully reset each elements.
+http://css3generator.com/ -> example of how to write css3 things for different browsers. Super cool
+
+----------------Tags(elements)------------------------
+<br/> -> like pressing enter
+<hr/> -> makes horizontal line
+<strong></strong> ->make the word in between bold
+<em></em> -> Italize the word in between
+<a href="locationofpage"></a> -> anchor tag, seround the word that need to be clicked to go on another page; have to add attribute e.g <a href="">
+<img src="" alt=""/>
+<audio src=""></audio>
+<div> </div> -> it's a block level element (top to bottome) [To make a big block on the page]
+<span></span> -> it's an in line element (left to right) [To change a word in a sentence]
+<form action=""> </form>
+&'name'; -> gives you different symbols in html e.g &raquo; gives you '>>'
+
+=================Shortcut=========================
+html-------------------------------------------->
+div#mouse.dad[name=joe age=12]'Then press tab' -> <div id="mouse" class="dad" name="joe" age="12"></div>
+div>p>ul>li'Then press tab' ->  <div>
+                                   <p>
+                                       <ul>
+                                           <li></li>
+                                       </ul>
+                                   </p>
+                               </div>
+ul>li*5>a[href=#]'Then press tab' ->     <ul>
+                                              <li><a href="#"></a></li>
+                                              <li><a href="#"></a></li>
+                                              <li><a href="#"></a></li>
+                                              <li><a href="#"></a></li>
+                                              <li><a href="#"></a></li>
+                                          </ul>
+
+css-------------------------------------------->
+m0px'Then press tab' -> margin: 0px;
+p10px20px30px40px-> padding: 10px 20px 30px 40px;
+m10px/auto -> margin: 10px auto;
