@@ -1,8 +1,0 @@
-/*DEFAULT: black dot for un-order list*/
-ul{
-    /*list-style-type:square;!*'disk' type is default*!*/
-    list-style-type:decimal;/*change an un-orderlist to order list*/
-    /*list-style-image:url("CAMPO2.png");!*Use small image else browser wont show the entire image*!*/
-    line-height: 150%;/*paragraph spaces between each list items*/
-    list-style-position: inside;/*by default outside*/
-}
