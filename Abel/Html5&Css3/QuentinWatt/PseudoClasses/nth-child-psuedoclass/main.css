@@ -1,0 +1,4 @@
+#parent p:nth-child(/*even, odd, (1,2..)n, # if just put nunber choose that index*/4n){
+    color: red;
+    background: green;
+}

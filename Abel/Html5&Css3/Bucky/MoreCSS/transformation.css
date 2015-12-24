@@ -1,0 +1,26 @@
+body{
+    text-align: center;
+}
+#box {
+    display: block;
+    border: 5px solid green;
+    width: 500px;
+    align-content: center;
+    margin: 50px auto;
+    padding: 15px;
+    background: yellow;
+    outline: 7px ridge red;/*The thing around the border, like an additional boarder*/ /*Don't reconmend it, add too much*/
+    /*How do you want to transform the elements: scale, rotate, skew,translate*/
+    /*-webkit-transform: scale(1.5); !*(by how much for all) or (x,y,z)*! !*transform: scale(1.5);*!*/
+    /*-webkit-transform: scale(1,-4); !*(by how much for all) or (x,y)*! !*transform: scale(1.5);*!*/
+    /*-webkit-transform:rotate(45deg);!*(takes the degree)*!*/
+    /*-webkit-transform:skew(30deg);!*Do not ever use this looks stupid*!*/
+    /*-webkit-transform:translate(10px,50px);!*just moving something (move_right, move_down)*!*/
+    -webkit-transform: translate(10px,50px) rotate(50deg) scale(1.5)/*If you want to apply mutliple effect(tranform)*/
+
+}
+#text{
+    font: bold 30px Tamoha;
+    text-shadow: rgb(0, 255, 0) 3px 3px 5px;/*Don't use the webkit*/
+    /*-webkit-transform: translate(10px,50px) rotate(50deg) scale(2)*/
+}

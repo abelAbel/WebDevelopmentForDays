@@ -1,0 +1,32 @@
+/*vid-24*/
+body{
+    text-align: center;
+}
+#box {
+    border: 2px solid green;
+    display: block;
+    margin:150px auto;
+    color: purple;
+    /*What I want to start with, initial values*/
+    -webkit-border-radius: 10px;
+    opacity: .6;/*Transparancy*/
+    background:red;
+    width: 120px;
+    height: 75px;
+    /*Set animation on all the things(elements) we want to animate*/
+    -webkit-transition: -webkit-transform 2s, opacity 2s, background 2s, width 2s, height 2s;
+}
+#box:hover{
+    -webkit-transform:rotate(360deg);
+    opacity:1;
+    background:yellow;
+    width:450px;
+    height:110px;
+
+}
+
+#text{
+    font: bold 15px Tamoha;
+    text-shadow: rgb(0, 255, 0) 3px 3px 5px;/*Don't use the webkit*/
+
+}

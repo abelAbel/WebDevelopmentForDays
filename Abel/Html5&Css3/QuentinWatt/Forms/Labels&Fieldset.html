@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vid 50</title>
+</head>
+<body>
+    <form action="" method="get">
+        <!--To group them I can use a field set-->
+        <fieldset> <!--When using a fieldset you can use 'legend'(like a header but does not get bolded)-->
+            <legend>Personal info: </legend>
+            <!--use <label> tags so that it is easier to style later in css
+            'for': will link our label to whatever element this label was supposed to be linked to,
+              ^* It links to an 'id' attribute only*-->
+            <label for="first_name_id"> first name: </label> <input type="text" name="first_name" id="first_name_id"/>  <br/>
+            <label for="last_name"> last name:</label><input type="text" name="last_name" id="last_name"/>  <br/>
+        </fieldset>
+
+        <br/> <br/>
+
+        <fieldset>
+            <legend>Hobies:</legend>
+            <label for="sport"> sport </label> <input type="checkbox" name="sport_checkbox"  value="sport" id="sport">
+            <label for="gaming"> gaming</label> <input type="checkbox" name="gaming_checkbox" value="gaming" id="gaming">
+            <label for="art"> art </label> <input type="checkbox" name="art_checkbox" value="art" id="art">
+            <label for="acting"> acting </label> <input type="checkbox" name="acting_checkbox" value="acting" id="acting">
+            <br/>
+        </fieldset>
+        <input type="submit" value="submit">
+
+    </form>
+</body>
+</html>

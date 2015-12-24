@@ -31,6 +31,7 @@ http://css3generator.com/ -> example of how to write css3 things for different b
 
 =================Shortcut=========================
 html-------------------------------------------->
+p{skljlkfjsld}'Then press tab'  -> <p>"skljlkfjsld"</p>
 div#mouse.dad[name=joe age=12]'Then press tab' -> <div id="mouse" class="dad" name="joe" age="12"></div>
 div>p>ul>li'Then press tab' ->  <div>
                                    <p>
@@ -46,6 +47,10 @@ ul>li*5>a[href=#]'Then press tab' ->     <ul>
                                               <li><a href="#"></a></li>
                                               <li><a href="#"></a></li>
                                           </ul>
+
+ul>li>a[href="www.google.com"]{google link}'Then press Tab'-> <ul>
+                                                                  <li><a href="www.google.com">google link</a></li>
+                                                              </ul>
 
 css-------------------------------------------->
 m0px'Then press tab' -> margin: 0px;

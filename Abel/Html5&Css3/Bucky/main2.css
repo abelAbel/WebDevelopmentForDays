@@ -1,0 +1,10 @@
+/*pseudo-class: way we can have more control ovell all elements*/
+/*p:nth-child(3){color:green} !*represent one of the children as a number*/
+                               /*Any paragraph that is the third child get this style*!*/
+/*p:nth-child(odd){color:green} !*can use 'even,odd', can write formulas in it too*!*/
+/*p:nth-child(even){color:red} !*can use 'even,odd',*!*/
+
+/*Negation psuedo-class: say what we want to exclude from css rule*/
+* {color: aqua;} /* '*': effect every tags*/
+:not(.daughter2){color: greenyellow;}/*Made negation class*/
+                        /*Every thing that is not in the class 'daughter2' color like so*/

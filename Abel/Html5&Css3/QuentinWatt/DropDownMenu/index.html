@@ -1,0 +1,70 @@
+<!--https://www.youtube.com/watch?v=cN4ZLkb7tEk&list=PL9DA3881423E59E49&index=1-->
+<!--https://www.youtube.com/watch?v=-YqLl-BXRp8-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Drop Down</title>
+    <link rel="stylesheet" href="main.css">
+    <!--<link href='https://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>-->
+</head>
+<body>
+    <div id="container">
+        <nav id="main_menu"> <!--hold our navigations--> <!--Pretty much alot of list nested in other lists-->
+            <ul>
+                <li class="active"><a href="#"> Home</a> <!--To add dropdown menu: put a new list(ul or ol) inside the list item 'li' body -->
+                    <ul>
+                        <li><a href="">home1</a></li>
+                        <li><a href="">home2</a></li>
+                        <li><a href="">home2</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Porfolio</a>
+                    <ul>
+                        <li><a href="#">porf1 &raquo;</a>
+                            <ul>
+                                <li><a href="">Portraits</a></li>
+                                <li><a href="">Action Shots &raquo;</a>
+                                    <ul>
+                                        <li><a href="">Indoors</a></li>
+                                        <li><a href="">Outdoors &raquo;</a>
+                                            <ul>
+                                                <li><a href="">Spring</a></li>
+                                                <li><a href="">Summer</a></li>
+                                                <li><a href="">Autumn</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="">This is a very long named menu item hunh!</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">Stealth</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">porf2</a></li>
+                        <li><a href="#">porf3</a></li>
+                    </ul>
+
+                </li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Links</a>
+                    <ul>
+                        <li><a href="">link1 &raquo;</a>
+                            <ul>
+                                <li class="active"><a href="">Dog link</a></li>
+                                <li><a href="">cat link</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">link2</a></li>
+                        <li><a href="">link3</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+        <div id="content">
+            <p>Hello World</p>
+        </div>
+    </div>
+
+</body>
+</html>
