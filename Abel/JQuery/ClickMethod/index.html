@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link type="text/css" rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div id="left">
+        <h2>Left Content Area</h2>
+        <p>This section is the left content area. </p>
+    </div>
+
+    <div id="center">
+        <h2>Center Content Area</h2>
+        <p>This area will contain the center content area.</p>
+    </div>
+
+    <div id="right">
+        <h2>Right Content Area</h2>
+        <p>This area will contain the right content area.
+        </p>
+
+    </div>
+
+    <div id="test_button">
+        <button> Hit button to change something </button>
+    </div>
+
+    <script src="../../../../JavaScript/JQuery/jquery-1.11.3.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            $("button").click(function() {
+
+                $("#right").hide();
+
+            });
+        });
+
+
+    </script>
+</body>
+</html>

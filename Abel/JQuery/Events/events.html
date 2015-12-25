@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <title> Vid 17</title>
+
+</head>
+
+<body>
+<h2></h2>
+<div id="left">
+    <h2>Left Content Area</h2>
+    <p class="para2">This section is the left content area. </p>
+    <p>This section is the left content area 2. </p>
+</div>
+
+<div id="center">
+    <h2>Center Content Area</h2>
+    <p>This area will contain the center content area.</p>
+    <ul>
+        <li>Bobcats</li>
+        <li>WildCat</li>
+        <li></li>
+    </ul>
+</div>
+
+<div id="right">
+    <h2>Right Content Area</h2>
+    <p>This area will contain the <b>right content</b> area.</p>
+    <img src="" alt="field"/>
+
+</div>
+
+<div id="test_button">
+    <button> Hit button to turn styling on and off </button>
+</div>
+
+<script src="../jquery-1.11.3.js"></script>
+<script>
+    $("document").ready(function(){
+/*3 step process
+ * 1. Select element 2.Add event method 3.Add the code for the action*/
+
+
+/*mouseover() (Vid-17)*/
+//        $("button").mouseover(function() {
+//            $("button").css("color","red");
+//        });
+//        $("img").mouseover(function(){
+////            $("p").text("Went over picture");
+//            $("#right").append("<h2>you hover on picture</h2>");
+//        });
+
+/*hover()->takes two function, one for hovering on and other for hovering off (Vid-18)
+* Usually show() and hide() are used with it*/
+//
+//        $("#right").hover
+//        (
+//            /*1st function*/function(){ /*when hovering on the element*/
+//                $("div").css("background","green");
+//                $("img").show();
+//
+//            },/*separated by comma*/
+//            /*2nd function*/function(){ /*when hovering off the element*/
+//                    $("div").css("background","yellow");
+//                    $("img").hide();
+//
+//                }
+//        );
+
+        $("#right").hover
+        (
+                /*1st function*/function(){ /*when hovering on the element*/
+                    $("div").css("background","green");
+                    $("img").attr("src","cool-cat.jpg");
+                    $("img").show();
+
+
+                },/*separated by comma*/
+                /*2nd function*/function(){ /*when hovering off the element*/
+                    $("div").css("background","yellow");
+                    $("img").hide();
+
+                }
+        );
+
+    });
+/*Load event*/
+/*JQuery ready executes when HTML-Document is loaded and DOM is ready (earliest possible)
+ * The ready event will get triggered when the DOM is ready*/
+/*Load executes when complete page is fully loaded, including all frames, objects and images
+ * The DOM has been loaded and everything on the webpage has been loaded*/
+    $("img").load(function(){ /*not an element so don't have to use quote("")*/
+        alert("Image has been loaded");
+    });
+    $(window).load(function(){ /*not an element so don't have to use quote("")*/
+        alert("Page has been loaded");
+    });
+
+</script>
+
+
+</body>
+</html>

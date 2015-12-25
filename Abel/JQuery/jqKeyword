@@ -1,0 +1,11 @@
+JQuery is javascript
+/*JQuery ready executes when HTML-Document is loaded and DOM is ready (earliest possible)
+* The ready event will get triggered when the DOM is ready*/
+/*Load executes when complete page is fully loaded, including all frames, objects and images
+* The DOM has been loaded and everything on the webpage has been loaded*/
+
+https://www.youtube.com/watch?v=BWXggB-T1jQ -> Derek
+https://www.youtube.com/watch?v=plLQQmqfdQY&list=PLr6-GrHUlVf96NLj3PQq-tmEB6woZjwEl&index=49 -> EJ Media
+
+/Users/abelamadou/IdeaProjects/jquery-1.11.3.js
+

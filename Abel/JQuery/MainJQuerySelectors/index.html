@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <title> Vid 5</title>
+
+</head>
+
+<body>
+
+    <div id="left">
+        <h2>Left Content Area</h2>
+        <p>This section is the left content area. </p>
+        <p>This section is the left content area 2. </p>
+    </div>
+
+    <div id="center">
+        <h2>Center Content Area</h2>
+        <p>This area will contain the center content area.</p>
+        <ul>
+            <li>Bobcats</li>
+            <li>WildCat</li>
+            <li></li>
+        </ul>
+    </div>
+
+    <div id="right">
+        <h2>Right Content Area</h2>
+        <p>This area will contain the <b>right content</b> area.
+        </p>
+
+    </div>
+
+    <div id="test_button">
+        <button> Hit button to change something </button>
+    </div>
+
+    <script src="../jquery-1.11.3.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            $("button").click(function() {
+
+                //$("#right").hide();
+                /*JQuery selector usualy start with ':'*/
+/*:first -> will target the first element of a particular type */
+//                $("div:first").hide(); /*Hide first div section*/
+//                $("div:last").hide(); /*Hide last div section*/
+
+
+/*'not()' -> specifie what we do not wan to include in our selection*/
+//                $("div:not(#test_button)").hide();
+//                $("div:not(#test_button, #center)").hide();
+
+
+/*Decendent selector*/
+                /*Going to hide the paragraph in only the first div*/
+//                $("#left p:first").hide();
+                /*Select all the even div element*/
+//                $("div:even").hide();/*even and odd*/
+
+/*contains -> 'put anything you want to find in that element*/
+//                $("p:contains('This')").hide(); /*Check every p element and give me those elements who contain 'This' in the body, then I hide those p elements*/
+//                $("h2:contains('Left')").hide();
+
+
+/* 'has' selector -> It allows you to select elements that are inside another  elements*/
+//                $("div:has('b')").hide(); /*Every div element that has a b element hide them*/
+//                $("p:has('b')").hide();
+
+
+/*nth-child selector -> let us pick a child by it's index, *it is not 0 based, it start with 1!!!
+* element must have a parent*/
+//                $("ul li:nth-child(1)").hide(); /*even, odd, n(#)*/
+//                $("body div:nth-child(2)").hide(); /*even, odd, n(#)*/
+
+
+/* 'empty' selector that let's you target empty elements(have no content, nothing is in it) */
+                $("li:empty").hide();/*For every li element that is empty select that one*/
+
+            });
+        });
+
+
+    </script>
+</body>
+</html>

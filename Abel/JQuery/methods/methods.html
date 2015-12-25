@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <title> Vid 8</title>
+
+</head>
+
+<body>
+    <h2></h2>
+    <div id="left">
+        <h2>Left Content Area</h2>
+        <p class="para2">This section is the left content area. </p>
+        <p>This section is the left content area 2. </p>
+    </div>
+
+    <div id="center">
+        <h2>Center Content Area</h2>
+        <p>This area will contain the center content area.</p>
+        <ul>
+            <li>Bobcats</li>
+            <li>WildCat</li>
+            <li></li>
+        </ul>
+    </div>
+
+    <div id="right">
+        <h2>Right Content Area</h2>
+        <p>This area will contain the <b>right content</b> area.</p>
+        <img src="CAMPO2.png" alt="field"/>
+
+    </div>
+
+    <div id="test_button">
+        <button> Hit button to turn styling on and off </button>
+    </div>
+
+    <script src="../jquery-1.11.3.js"></script>
+    <script>
+        $("document").ready(function(){
+
+            $("button").click(function(){
+/*css method*/
+//                $('#left').css("color","blue");/*$("#left").css("any css property",'value');*//*Can use single or double quotes*/
+//                $('#left').css("border","4px dotted yellow");
+
+/*Adding multiple css rules*/
+//                $("#left").css({ /*sperate by color*/
+//                    border:"10px dotted purple",
+//                    "color":"green"
+//                });
+
+/*html() treats the content as HTML, text() treats the content as text
+* They both update content, but doing it a little bit differently*/
+//                $("p").html("<h2>Howdie partner</h2>"); /*repace every p elements with h2 elements*/
+//                $("p").html("<p>Howdie partner</p>");
+
+//                $("p").text("new text");
+//                $("body>h2").text("Give the empty h2 tag some text");
+
+
+/*Chaining method*/
+             /*   Going to chain it, instead of writing the same selector 3 times
+
+                $("#left").css("color", "purple");
+                $('#left').css("border","4px dotted yellow");
+                $("#left").fadeOut("20000");
+            */
+            /*Chained them toghether, this is the same as ^ above*/
+//                $("#left").css("color", "purple").css("border","4px dotted yellow").fadeOut("20000");/*fadeOut is in millisecond*/
+
+
+/*Add and remove class method -> adds a class to elements(tags)*/
+//                $("p:last").addClass("para"/*don't have to put the dot*/);
+//                $("p:first").removeClass("para2");
+
+
+/*togleClass() -> to turn off and on, combines the (addClass() and removeClass() )*/
+//                $("p:first").toggleClass ("para2");
+
+
+/*Append, prepend, before and after method (Vid-14)*/
+//
+//                $("#right").append("<h2>We are being added in back</h2>");/*it will append the element after the element we selected(always be the last child element)*/
+//                $("#right").prepend("<h2>We are being added in front</h2>");/*it will append the element before the element we selected(always be the first child element)*/
+//                $("#right").after("<h2>We are outside after the div(right) element</h2>");/*it does not put it inside the element we selected, it puts it after that element*/
+//                $("#right").before("<h2>We are outside before div(right) element</h2>");/*it does not put it inside the element we selected, it puts it before that element*/
+
+
+/*replaceWith() and remove() (Vid-15)*/
+//                $("p").replaceWith("<h2>HOWDIE</h2>");/*replace all the p elements with this new element*/
+//                $("#right p").replaceWith("<p>YOU JUST CLIKED A BUTTON</p>");/*USED TO GIVE NEW MESSAGE ONCE THE USER DOES SOMETHING ON WEBPAGE*/
+//                $("#right").remove();/*Useful for letting user remove something they don't want to see, adds etc..*/
+//                $("body").remove();/*Useful for letting user remove something they don't want to see, adds etc..*/
+
+/*Attribute methods (vid-16)*/
+//                $("img").attr("src","cool-cat.jpg"); /*(whaterver attribute you want to use(not case sensitive), the value )*/
+//                $("img").removeAttr("src");/*add remove any attribute*/
+//                $("img").removeAttr("alt");/*add remove any attribute*/
+
+
+/*Each method and 'this' keyword' ->goes hand to hand each() and this (Vid-21)
+* each() -> allow you to loop through a bunch of element; retrieves all the elments in your selector */
+                var i = 1;
+                $("li").each(function(){/*Going to loop through all the "li" in our body/page*/
+//                    $(this).html(" <h2>Tiger</h2>"); /*'this' select the current element in the 'each' loop; a place holder*/
+                    var combine = "Tiger "+(i);
+                    $(this).text(combine);
+                    alert(i++);
+                });
+
+
+
+            });
+
+
+
+        });
+
+    </script>
+</body>
+</html>

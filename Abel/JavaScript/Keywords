@@ -1,5 +1,0 @@
-Pass by value in Javascript-> a copie is made of the value that is being passed into the parameter of the function
- <script src="jcode.js"></script>
-A variable is an object
-DOM -> Document object Mode, refers to having a coresponding object to each html elements on the javScript side
-script tag -> need to be put at the bottom of the body, after everything is already rendered. Their is an overhead added when it is in the head section

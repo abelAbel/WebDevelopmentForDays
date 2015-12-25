@@ -51,7 +51,19 @@ ul>li*5>a[href=#]'Then press tab' ->     <ul>
 ul>li>a[href="www.google.com"]{google link}'Then press Tab'-> <ul>
                                                                   <li><a href="www.google.com">google link</a></li>
                                                               </ul>
+div#>h2>^p -> <div id="">
+                  <h2></h2>
+                  <p></p>
+              </div>
+ (div#>h2>^p)*2 -> <div id="">
+                       <h2></h2>
+                       <p></p>
+                   </div>
 
+                   <div id="">
+                       <h2></h2>
+                       <p></p>
+                   </div>
 css-------------------------------------------->
 m0px'Then press tab' -> margin: 0px;
 p10px20px30px40px-> padding: 10px 20px 30px 40px;
