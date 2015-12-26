@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    /*Can perform math in .write by seperating string with ',' coma*/
+    document.write("5 + 10 = ", 5+10,"<br/>"); /*not the same as with bellow*/
+    document.write("5 + 10 = "+ 5+10+"<br/>");
+
+    document.write("5 - 10 = "+ 5+10+"<br/>");
+    document.write("5 * 10 = "+ 5+10+"<br/>");
+    document.write("5 / 10 = "+ 5+10+"<br/>");
+    document.write("5 % 10 = "+ 5+10+"<br/>");
+
+    document.write("<br/>","Incrementing(++,--,+=, etc...)","--------------------------<br/>");
+    var randN = 5;
+    document.write("randN++ = ", randN++,"<br/>");
+    document.write("++randN = ", ++randN,"<br/>");
+
+    document.write("<br/>","Number object","<br/>");
+    document.write("Max Num = ",Number.MAX_VALUE,"<br/>");
+    document.write("Min Num = ",Number.MIN_VALUE,"<br/>");
+    /*Precision is only to 16 decimal places*/
+
+
+
+/*Rounding*/
+    document.write("<br/>"+"Rounding","--------------------------<br/>");
+    var balance = 1563.87907
+    document.write("Monthly Payment:", balance.toFixed(2),"<br/>");/*Round to two decimal places*/
+
+/*Random*/
+    document.write("<br/>"+"Random","--------------------------<br/>");
+    document.write("Random # (1-10) = ", Math.floor((Math.random()*10)+1),"<br/>");/*need to floor it because it gives us decimal, and need to add 1, because it usually start at 0*/
+
+/*Converting*/
+    document.write("<br/>"+"Converting data types","--------------------------<br/>");
+    document.write("Converting string to number : ", Number("3.14"),"<br/>");
+    document.write("Converting string to Int : ", parseInt("50"),"<br/>");
+    document.write("Converting string to Float : ", parseFloat("5.33445"),"<br/>");
+
+
+
+    //    document.write("","--------------------------<br/>");
+
+
+</script>
+
+</body>
+</html>

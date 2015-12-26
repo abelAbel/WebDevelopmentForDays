@@ -6,6 +6,56 @@
     <script src="jscode.js"></script>
 </head>
 <body>
+    <script>
+/*Able to pass function inside of function*/
+        document.write("<br/>");
+        document.write("<br/>Passing function to funtions <br/>".big().bold());
+        function time2(numb){
+            return numb * 2;
+        }
+        function time3(numb){
+            return numb * 3;
+        }
+        function multiply (func, numb){
+            return func(numb);
+        }
+
+        document.write("2 * 5 = ",multiply(time2,5),"<br/>");
+        document.write("3 * 5 = ",multiply(time3,5),"<br/>");
+
+/*Function expression*/
+        document.write("<br/>Function expression <br/>".big().bold());
+        var quadriple = function(numb){
+            return numb *4;
+        };
+        document.write("4 * 5 = ",multiply(quadriple,5),"<br/>");
+
+/*Passing multiple argument*/
+//    document.write("<br/>");
+        document.write("<br/>Passing multiple argument<br/>".big().bold());
+        function getSum(){
+            document.write("Arguments passed in: ");
+            for(k in arguments){
+                document.writeln(arguments[k]);
+            }
+            document.write("<br/>");
+            var sum = 0;
+            for (i = 0; i<arguments.length; i++){
+                sum+= arguments[i];
+            }
+            return sum;
+        }
+
+        document.write("Sum = ",getSum(1,2,3,4),"<br/>");
+        document.write("Sum = ",getSum(1,2,"R",3,4,5,"dd"),"<br/>");
+
+/*Returning multiple argument -> just return an array*/
+
+/*Recursive function*/
+    document.write("<br/>Recursive function<br/>".big().bold());
+
+
+    </script>
 
 </body>
 </html>

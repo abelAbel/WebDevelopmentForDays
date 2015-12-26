@@ -6,6 +6,72 @@
     <script src="jcode.js"></script>
 </head>
 <body>
+    <script>
+        document.writeln("<br/><br/> Don't have to specify size<br/>");
+        var array = [];
+        document.write("Array: ",array,"<br/>");
+        array[1] = 10;
+        document.write("Array: ",array,"<br/>");
+        array[10] = 30;
+        document.write("Array: ",array,"<br/>");
 
+/*Popping, pushing, shift and unshift items*/
+        document.writeln("<br/> Popping and pushing items<br/>");
+        var array1 = ["A","B","C","D"];
+        /*Pop and push*/
+        document.write("Array: ",array1,"<br/>");
+        array1.pop();
+        document.write("After poping Array: ",array1,"<br/>");
+        array1.push("4444", 3334);
+        document.write("After pushing Array: ",array1,"<br/>");
+        /*Shift and unshift*/
+        array1.shift();/*Deleting first item of array*/
+        document.write("After shifting Array: ",array1,"<br/>");
+        array1.unshift("K","Z");/*adding things at the begining of array*/
+        document.write("After unshifting Array: ",array1,"<br/>");
+
+
+
+        /*Over ride value with splice*/
+        document.writeln("<br/> Override value<br/>");
+        var array2 = ["A","B","C","D"];
+        document.write("Array: ",array2,"<br/>");
+        /*over ride index 2 and fit everything after index 2 without overiding*/
+        /*I only want to overide 1 thing*/
+        array2.splice(2,1, "Mike","John");
+//        array2.splice(2,0, "1","2");/*won't over ride 2, but will put new elment there and move 2 to the end*/
+//        array2.splice(4,1);/*Delete 1 thing, index 4*/
+        document.write("Array: ",array2,"<br/>");
+
+/*Convert Array into String*/
+        document.writeln("<br/> Convert Array into String<br/>");
+        var array3 = ["A","B","C","D"];
+        document.write("Array_join: ",array3.join(">" ),"<br/>");
+        document.write("Array_valueOf: ",array3.valueOf(),"<br/>");
+        document.write("Array_toString: ",array3.toString(),"<br/>");
+/*Delete Index*/
+        document.writeln("<br/> Delete <br/>");
+        delete array3[2];
+        document.write("Array3: ",array3[2],"<br/>");
+        document.write("Array3: ",array3,"<br/>");
+
+/*Sorting*/
+        document.writeln("<br/> Sorting <br/>");
+        var numberA = [1,5,3,2,4,0];
+        document.write("numberA: ",numberA,"<br/>");
+        /*Just for number decending order(x-y), accending order(y-x)*/
+        numberA.sort(function(x,y){return x -y});/*starting sorting with 1 and then the following numbers*/
+        document.write("sorted numberA: ",numberA,"<br/>");
+//        document.write("numberA: ",numberA.sort(),"<br/>"); /*can use sort() or reverse() this works with  alphabetic as well as numbers*/
+
+/*Combining Arrays*/
+        document.writeln("<br/> Combining Arrays <br/>");
+        var A1 = [1,5,3,2,4,0];
+        var A2 = ["A","B","C","D"];
+        var comb = A1.concat(A2);
+        document.write("Combined array (concat): ",comb,"<br/>");
+
+
+    </script>
 </body>
 </html>

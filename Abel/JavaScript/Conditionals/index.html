@@ -6,6 +6,41 @@
     <script src="ifst.js"></script>
 </head>
 <body>
+<!--Relational Operators:
+                        ==(compare value are equal)
+                        ===(compare value and the type are equal)
+                        != > < >= <=
+    Logical Operators: && || !-->
+
+    <script>
+/*equals*/
+        document.write("<br/>");
+        document.write("\"5\" == 5 -> ","5"==5, "<br/>");/*true*/
+        document.write("\"5\" === 5 -> ","5"===5, "<br/>");/*false*/
+
+
+/*Switch statement*/
+        document.write("<br/>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Switch statement >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><br/> ");
+        var age = 0;
+        switch (age){
+            case 5:/*check two potential canditate, check if age = 5 or age = 6*/
+            case 6:
+                document.write("Age is  5 or 6 <br/>");
+                break;
+            case 7:
+                document.write("Age is  7 <br/>");
+                break;
+            default:
+                document.write("Deafult <br/>");
+
+        }
+
+/*Ternary operation */
+        document.write("<br/>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Ternary operation >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><br/> ");
+        //(condition) ? ifTrue : ifFalse
+        var canIVote = (age >= 18) ? "Yes": "No";
+        document.write("Vote Status: " + canIVote+ " <br/>");
+    </script>
 
 </body>
 </html>

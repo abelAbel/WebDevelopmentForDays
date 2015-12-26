@@ -15,3 +15,8 @@ var newNumber = 26 + Math.floor(number); /*round down*/
 document.write(newNumber+"<br/>");
 
 document.write(Math.sqrt(16)+"<br/>");
+
+/*Get random value*/
+document.write("Random # (1-10) = ", Math.floor((Math.random()*10)+1));/*need to floor it because it gives us decimal, and need to add 1, because it usually start at 0*/
+
+
