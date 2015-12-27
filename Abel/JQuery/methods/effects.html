@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <title> Vid 13</title>
+
+</head>
+
+<body>
+<h2></h2>
+<div id="left">
+    <h2>Left Content Area</h2>
+    <p class="para2">This section is the left content area. </p>
+    <p>This section is the left content area 2. </p>
+</div>
+
+<div id="center">
+    <h2>Center Content Area</h2>
+    <p>This area will contain the center content area.</p>
+    <ul>
+        <li>Bobcats</li>
+        <li>WildCat</li>
+        <li></li>
+    </ul>
+</div>
+
+<div id="right" hidden> <!--'hidden'  for element you want to hide-->
+    <h2>Right Content Area</h2>
+    <p>This area will contain the <b>right content</b> area.
+    </p>
+
+</div>
+
+<div id="test_button">
+    <button> Hit button to turn styling on and off </button>
+</div>
+
+<script src="../jquery-1.11.3.js"></script>
+<script>
+    $("document").ready(function(){
+        $("button").click(function(){
+/*fadeIn fadeOut fadeTo -> slow,fast or specific milliseconds
+* fadeTo -> let you change opacity level, opacity setting is between 0.0 and 1.0*/
+//            $("#right").fadeIn(2500); /*need something hidden to have it fade in or low opacity*/
+            $("#center").fadeOut(2500);
+            /*Chaining together*/
+            $("#right").fadeIn(2500).fadeOut(2500);
+            $("#left").fadeTo(2500,.3);/*(milli sec,oppacity)*/
+
+
+
+
+        });
+    });
+</script>
+</body>
+</html>

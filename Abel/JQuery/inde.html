@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vid2</title>
+    <style>
+        /**{*/
+            /*margin: 0px;*/
+            /*padding: 0px;*/
+        /*}*/
+        body{
+            display:-webkit-box;
+            -webkit-box-pack: center;
+            width: 100%
+        }
+        div{
+            -webkit-box-flex: 1;
+            border: 2px solid black;
+            width: 400px;
+            padding:10px;
+            margin: 20px;
+        }
+
+        /*medium resolution, 481px to 1023px */
+        @media only screen and (min-width: 0px) {
+            body{background: green; -webkit-box-orient:vertical;}
+        }
+
+        /*high resolution, 1024px and above*/
+        @media only screen and (min-width: 1024px) {
+            body { background: blue; -webkit-box-orient:horizontal; }
+        }
+
+    </style>
+
+
+    <script src="jquery-1.11.3.js"></script>
+    <!--<script src="jscode.js"></script>-->
+    <script>/*To hold out JQuery*/
+        /*JQuery ready function, act as a wraper, going to up all JQuery code inside this function;
+         * All this does is basically waits until the webpage is actually downloaded before any
+         * of our JQuery code is executed; We cannot manipulate the DOM until it has been created, thus why we have to do this*/
+        $(document).ready(function(){
+            //To call JQuery library, always start with '$' or can write 'jquery' instead
+            // $(/* write css selector element want to use*/)/* When calling JQuery library, Creates object for us to use*/
+            //$("#right").hide();
+            $("#right, #center").hide();
+
+        });
+
+    </script>
+
+
+</head>
+<body>
+
+<div id="left" class="style">
+    <h2>Left Content Area</h2>
+    <p>This area will contain the left content area. We will populate
+    this area with images and text</p>
+</div>
+
+<div id="center" class="style">
+    <h2>Center Content Area</h2>
+    <p>This area will contain the left content area. We will populate
+        this area with images and text</p>
+</div>
+
+<div id="right" class="style">
+    <h2>Right Content Area</h2>
+    <p>This area will contain the left content area. We will populate
+        this area with images and text</p>
+</div>
+
+
+
+
+
+
+</body>
+</html>
