@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<!-- ---------- EXCEPTION HANDLING ---------- -->
+
+<script type="text/javascript">
+    // Through exception handling we can catch and manage errors rather then
+    // crashing by surrounding problem code in a try block and handling it
+    // in a catch block
+
+    var custArray = ["Tom", "Bob", "Sally", "Sue"];
+
+    var getCust = function(index){
+        if(index > custArray.length){
+            throw new RangeError("Index must be >= 0 and <= " + custArray.length );
+        } else {
+            return custArray[index];
+        }
+    };
+
+    try {
+        document.write("Customer : ", getCust(2), "<br />");
+        document.write("Customer : ", getCust(5), "<br />");
+    }
+    catch(ex){
+        if (ex instanceof RangeError){
+            document.write("ex: "+ ex + "<br />");
+            document.write(ex.message + "<br />");
+        }
+    }
+
+</script>
+
+</body>
+</html>
