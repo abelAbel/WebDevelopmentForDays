@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Canvas Vid 35-43</title>
+</head>
+<body>
+
+    <section id="main">
+        <canvas style="border: 2px solid red" id="canvas1" width="600" height="400"><!--need to give an id--> <!--Blank piece of paper-->
+            <!--A grid system, (0,0) is top left-->
+
+
+            <!--Working with old internet, going to see this-->
+            Hopefully you don't see this. If you do, get google chrome..NOW!
+        </canvas>
+
+    </section>
+<!--need javaScript for functionality for canvas-->
+    <script>
+        /*Make one function to draw all the shapes*/
+        function doFirst(){
+            var canvas1 = document.getElementById("canvas1");
+            /*Can draw 2d and 3d shapes, so need to say what type the canvas is*/
+            canvas = canvas1.getContext('2d'); /*Want to be able to draw 2d shapes on it; reconmand making it global*/
+
+/*
+  Basic color changing and canvas use
+
+            /!*Change fill color*!/
+            canvas.fillStyle= "blue";
+            /!*Change color of stroke(outline)*!/
+            canvas.strokeStyle='green';
+            /!*Draw thing on canvas*!/
+            canvas.strokeRect(10,10,100,200); /!*drew outline of rectangle, (x,y,w,h)*!/
+            canvas.fillRect(10,10,80,100);
+            canvas.clearRect(20,20,10,10);/!*clearRect, is like a rectangle eraser(subtract pixels)*!/
+*/
+            //Adding Gradient instead of just solid color Vid-37 -> https://www.youtube.com/watch?v=FWB7SF9TM-A&list=PL4365CEFCE3DC35D1&index=37
+
+
+        }
+        window.addEventListener("load",doFirst,false); /*call funtion once everything finish loading*/ /*always put false for last argument*/
+    </script>
+
+
+</body>
+</html>

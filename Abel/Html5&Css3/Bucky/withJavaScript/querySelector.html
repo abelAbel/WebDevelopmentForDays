@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <div id="big_wrapper">
+        <p id="tuna">first</p>
+        <p id="bacon">second</p>
+        <p id="tuna">third</p>
+    </div>
+
+    <script>
+        function getStuff(){
+            //'querySelector' have different varietion of this method*/
+            //Can return only one elements
+            //Select everything with id of 'tuna'->
+            //this varietion (querySelector)is going to return the very first element selected
+            document.querySelector("#tuna").onclick = talk;
+
+            //Return a list, an array
+//            var list = document.querySelectorAll("#tuna");
+        }
+        function talk(){
+            alert("YYYYYaaaaahhhlooohhh");
+        }
+        //called once everything on the page gets loaded
+        window.onload = getStuff;
+    </script>
+</body>
+</html>
