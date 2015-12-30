@@ -28,6 +28,7 @@ http://css3generator.com/ -> example of how to write css3 things for different b
 <span></span> -> it's an in line element (left to right) [To change a word in a sentence]
 <form action=""> </form>
 &'name'; -> gives you different symbols in html e.g &raquo; gives you '>>'
+&#9742; -> gives phone icon
 
 =================Shortcut=========================
 html-------------------------------------------->

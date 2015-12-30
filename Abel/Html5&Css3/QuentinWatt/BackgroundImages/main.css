@@ -3,6 +3,7 @@ div{ /*usually just add it to the body tag when they have a picture, center top,
     width: 100%;/*as much space it can possibly take width wize*/
     border: 1px solid red;
     background-image: url(cool-cat.jpg);/*works with or without quotes inside url*/
+    background-size: cover; /*Cover the element, and streches and shrinks accordingly*/
     background-repeat:no-repeat ;/*To make it so that it does not repeats*/
     background-repeat:repeat-y ;/*To make it repeat only horizontal; '-y' for vertical*/
     background-position:center top; /*position the image: 'center' 'right top' 'left bottom' 'center bottom' etc..*/
