@@ -15,6 +15,7 @@ css 'position' element (left right top bottom)-> used to take an element without
 https://www.google.com/fonts/ -> to import and  use different kind of fonts in your system; to import '@import url('link for font')' e.g @import url(https://fonts.googleapis.com/css?family=Dancing+Script);
 http://cssreset.com/ -> website where you can find how to properly fully reset each elements.
 http://css3generator.com/ -> example of how to write css3 things for different browsers. Super cool
+http://codepen.io/ -> code and see live update
 
 ----------------Tags(elements)------------------------
 <br/> -> like pressing enter

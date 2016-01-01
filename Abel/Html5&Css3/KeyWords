@@ -15,6 +15,7 @@ css 'position' element (left right top bottom)-> used to take an element without
 https://www.google.com/fonts/ -> to import and  use different kind of fonts in your system; to import '@import url('link for font')' e.g @import url(https://fonts.googleapis.com/css?family=Dancing+Script);
 http://cssreset.com/ -> website where you can find how to properly fully reset each elements.
 http://css3generator.com/ -> example of how to write css3 things for different browsers. Super cool
+http://codepen.io/ -> code and see live update
 
 ----------------Tags(elements)------------------------
 <br/> -> like pressing enter
@@ -28,6 +29,7 @@ http://css3generator.com/ -> example of how to write css3 things for different b
 <span></span> -> it's an in line element (left to right) [To change a word in a sentence]
 <form action=""> </form>
 &'name'; -> gives you different symbols in html e.g &raquo; gives you '>>'
+&#9742; -> gives phone icon
 
 =================Shortcut=========================
 html-------------------------------------------->
@@ -51,7 +53,19 @@ ul>li*5>a[href=#]'Then press tab' ->     <ul>
 ul>li>a[href="www.google.com"]{google link}'Then press Tab'-> <ul>
                                                                   <li><a href="www.google.com">google link</a></li>
                                                               </ul>
+div#>h2>^p -> <div id="">
+                  <h2></h2>
+                  <p></p>
+              </div>
+ (div#>h2>^p)*2 -> <div id="">
+                       <h2></h2>
+                       <p></p>
+                   </div>
 
+                   <div id="">
+                       <h2></h2>
+                       <p></p>
+                   </div>
 css-------------------------------------------->
 m0px'Then press tab' -> margin: 0px;
 p10px20px30px40px-> padding: 10px 20px 30px 40px;
