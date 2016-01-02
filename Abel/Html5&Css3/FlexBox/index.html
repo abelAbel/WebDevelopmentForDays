@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <title>FlexBox Vid 2</title>
     <!--<link rel="stylesheet" href="style.css">-->
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
 
 
     <style>
         *{
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
             box-sizing: border-box;
         }
         .box{
@@ -93,36 +96,111 @@
 
     </style>-->
 
-<!--Flexbox Alignment vid 6-7>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
-<!--justify content-->
-    <!-- <style>/*concern about the 'main axis'*/
+<!--Flexbox Alignment vid 6-9>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+    <!--justify content-->
+        <!-- <style>/*concern about the 'main axis'*/
+             .container{
+                 border: 3px solid goldenrod;
+                 display: flex;
+                 /*justify-content: how are the items aligned on the main axis*/
+                 /*have to specify a height, when using column flex direction*/
+                 justify-content: space-between;/*flex-start, center, flex-end, space-between, space-around*/
+                 flex-direction: column; height: 150vh; /*goes hand to hand with justify content*/ /*don't need to for row direction*/
+             }
+         </style> -->
+
+    <!--align-items-->
+        <!--<style> /*concerned about the 'cross axis'*/
+            .container{
+                border: 3px solid goldenrod;
+                display: flex;
+                align-items: stretch;/*default*/
+                align-items: center;/*vertically center it automatically*/
+                align-items: flex-start;
+                align-items: flex-end;
+                align-items: baseline;/*looks at the text of items, and will make sure the bottom of each text is aligned properly*/
+                height:100vh ;/*need to gave it enought space to work with in this case*/
+            }
+        </style>-->
+
+    <!--align-content-->
+        <!-- <style> /*concerned about the 'cross axis'*/
          .container{
              border: 3px solid goldenrod;
              display: flex;
-             /*justify-content: how are the items aligned on the main axis*/
-             /*have to specify a height, when using column flex direction*/
-             justify-content: space-between;/*flex-start, center, flex-end, space-between, space-around*/
-             flex-direction: column; height: 150vh; /*goes hand to hand with justify content*/ /*don't need to for row direction*/
-         }
-     </style> -->
+             height: 100vh;
+             flex-wrap: wrap; /*need a wrap or else the align-content does not take effect*/
 
-<!--align-items-->
-    <style> /*concerned about the 'cross axis'*/
+             /*takes extra space on 'cross axis' and devie it up*/
+             align-content: center;/*default 'strech'*/
+
+             justify-content: center/*if we want to align it horizontely as well*/
+         }
+         .box{
+             width: 33.3333%;
+         }
+         </style> -->
+
+    <!--align-self -->
+        <!--<style>
         .container{
             border: 3px solid goldenrod;
             display: flex;
+            height: 100vh;
+            align-items:flex-start;
+        }
+        .box{
+            width: 33.3333%;
+        }
+        .box2{
+            padding-bottom: 200px;
+            align-self: flex-end;
+        }
+        .box6{
+            padding-bottom: 0;
+            align-self: stretch;
+        }
+        .box9{
+            padding-bottom: 50px;
+            align-self: center;/*overides the default one or parents*/
+        }
+        </style>-->
+<!--Flexbox sizing with the 'flex' property vid 10>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+<!--flex-->
+<!--    <style>
+        .container{
+            /*border: 3px solid goldenrod;*/
+            display: flex;
+            /*height: 100vh;*/
+        }
+        .box{
+            /*it's all in proportion not pixel, how much of the extra space or if their is not enought how do we devie it among the siblings */
+            flex:1;/*can be decimal*/ /*by default it is 'auto' which is the size of the content*/
+        }
+        .box2{
+            flex: 2.5;
+        }
+    </style>-->
+<!--flex-grow,flex-shrink,flex-basis vid 11 -->
+    <style>
+        .container{
+            display: flex;
+        }
+        .box{
+
         }
     </style>
-
 
 </head>
 <body>
 
 <!-- Don't have to be div can be any element for flex box -->
-<div class="container"> <!--flex container-->
-    <!--flex items-->
+<!--vid 1-9-->
+<!--<div class="container"> &lt;!&ndash;flex container&ndash;&gt;
+    &lt;!&ndash;flex items&ndash;&gt;
     <div class="box box1">1</div>
     <div class="box box2">2</div>
+    &lt;!&ndash;<div class="box box2">2 <br/>:)</div> &lt;!&ndash;will strech each row elements (align-content)&ndash;&gt;&ndash;&gt;
     <div class="box box3">3</div>
     <div class="box box4">4</div>
     <div class="box box5">5</div>
@@ -131,6 +209,21 @@
     <div class="box box8">8</div>
     <div class="box box9">9</div>
     <div class="box box10">10</div>
+</div>-->
+
+<!--vid 10-->
+<div class="container"> <!--flex container-->
+    <!--flex items-->
+    <div class="box box1">one</div>
+    <div class="box box2">two</div>
+    <div class="box box3">three</div>
+    <div class="box box4">four</div>
+    <div class="box box5">five</div>
+    <div class="box box6">six</div>
+    <!--<div class="box box7">seven</div>-->
+    <!--<div class="box box8">eight</div>-->
+    <!--<div class="box box9">nine</div>-->
+    <!--<div class="box box10">ten</div>-->
 </div>
 
 

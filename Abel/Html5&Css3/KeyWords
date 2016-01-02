@@ -16,6 +16,8 @@ https://www.google.com/fonts/ -> to import and  use different kind of fonts in y
 http://cssreset.com/ -> website where you can find how to properly fully reset each elements.
 http://css3generator.com/ -> example of how to write css3 things for different browsers. Super cool
 http://codepen.io/ -> code and see live update
+normalize->     <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+https://cdnjs.com/ -> to ge cdnjs links
 
 ----------------Tags(elements)------------------------
 <br/> -> like pressing enter
