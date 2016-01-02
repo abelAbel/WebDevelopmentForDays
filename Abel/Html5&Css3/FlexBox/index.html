@@ -1,0 +1,139 @@
+<!DOCTYPE html> <!--https://www.youtube.com/watch?v=ND8SjPJOk_M&index=2&list=PLu8EoSxDXHP7xj_y6NIAhy0wuCd4uVdid-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FlexBox Vid 2</title>
+    <!--<link rel="stylesheet" href="style.css">-->
+
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .box{
+            color:white;
+            font-size: 50px;
+            text-align: center;
+            text-shadow: 4px 4px 0 rgba(0,0,0,0.1);
+            padding: 10px;
+        }
+        .box1{background-color:red;}
+        .box2{background:blue}
+        .box3{background:purple}
+        .box4{background:#34495e}
+        .box5{background:yellow}
+        .box6{background:orange}
+        .box7{background:#e74c3c}
+        .box8{background:#bdc3c7}
+        .box9{background:#2ecc71}
+        .box10{background:#16a085}
+    </style>
+<!--Start writing out flexbox here. Above is just page setup-->
+
+<!--beginning, display>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+    <!-- <style>
+
+         /* Start writing out flexbox here. Above is just page setup */
+         .container{
+             /*the children becomes flex items automaticaly after setting flex*/
+             display:flex; /*goes all the way acros the entire page(similar to block elements)*/
+             /*display:inline-flex; !*just like an inline element (span etc.), wrap around the content, only takes the weight that it neeeds*!*/
+             border: 10px solid goldenrod;
+             min-height:100vh; /*'vh':view port height, make the element strech to the windo heigh, like 100%*/
+         }
+
+     </style>-->
+
+<!--Flex direction vid 3>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+   <!-- <style>
+        .container{
+            /*have 2 axis, main axis:left to right line; cross axis:top to bottom line*/
+            flex-direction:column;/*row is default*/ /*row-reverse, column-reverse*//*put on container and not items*/
+
+        }
+
+    </style>-->
+
+<!--Flex wrap vid 4>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+    <!--<style>
+        .container{
+            flex-wrap: wrap;/*default:nowrap; wrap-reverse;
+                            when 'wrap' it now works with specify 300 px*/ /*put on container and not items*/
+
+        }
+        .box{/*select flex items*/
+            /*width: 300px;!*going to try to work with what you gave it, but if can't will just do an even distribution to each items*!*/
+            width: 33.33333%; /*to get rid of the hanging white space from wraping*/
+
+
+        }
+
+    </style>-->
+
+
+<!--ordering vid 5>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+    <!--<style>
+        /* Start writing out flexbox here. Above is just page setup */
+        .container {
+            border: 10px solid goldenrod;
+            display: flex;
+        }
+        .box{
+            flex:1; /*gives an even distribution to each items*/
+        }
+
+        /*order -> changing order as they come in, header, footer etc. not good for paragraph or anything that need to be higlighted and copied*/
+        .box3{
+            order:1;/*takes a number*//*by default all have order 0, anything greater then zero get shift to the end*/
+        }
+
+        .box7{
+            order:2;/*takes a number*//*by default all have order 0, anything greater then zero get shift to the end*/
+        }
+
+    </style>-->
+
+<!--Flexbox Alignment vid 6-7>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+<!--justify content-->
+    <!-- <style>/*concern about the 'main axis'*/
+         .container{
+             border: 3px solid goldenrod;
+             display: flex;
+             /*justify-content: how are the items aligned on the main axis*/
+             /*have to specify a height, when using column flex direction*/
+             justify-content: space-between;/*flex-start, center, flex-end, space-between, space-around*/
+             flex-direction: column; height: 150vh; /*goes hand to hand with justify content*/ /*don't need to for row direction*/
+         }
+     </style> -->
+
+<!--align-items-->
+    <style> /*concerned about the 'cross axis'*/
+        .container{
+            border: 3px solid goldenrod;
+            display: flex;
+        }
+    </style>
+
+
+</head>
+<body>
+
+<!-- Don't have to be div can be any element for flex box -->
+<div class="container"> <!--flex container-->
+    <!--flex items-->
+    <div class="box box1">1</div>
+    <div class="box box2">2</div>
+    <div class="box box3">3</div>
+    <div class="box box4">4</div>
+    <div class="box box5">5</div>
+    <div class="box box6">6</div>
+    <div class="box box7">7</div>
+    <div class="box box8">8</div>
+    <div class="box box9">9</div>
+    <div class="box box10">10</div>
+</div>
+
+
+
+</body>
+</html>

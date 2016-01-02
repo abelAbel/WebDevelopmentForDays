@@ -11,6 +11,13 @@ It ties in with java script or php (Scripting languages), can't use the data we 
 css 'position' element (left right top bottom)-> used to take an element without removing it from it's natural flow of the page and push and pull it and does not effect the other elements on page.
   when you want to use 'absolute' and want it to be absolute to parent and not body, have to make the parent 'relative'
 
+css position-> static: like not declaring anything, it's default of position; (https://www.youtube.com/watch?v=Rf6zAP4YnZA)
+               relative: keeps the flow of the DOM, effect is like taking out a space, but keeping the flow the same ;
+               absolute: Dimmension is ripped out of the DOM; Other element flow as if it is not there, but it is on top, has a colapsing effect;
+               fixed: simmilar to 'absolute', causes the element to act as if it has no dimension(height or width); pulled out of the flow of the DOM;
+                     will not respect any of it's parent; allways relatively position to the document window, (not the DOM/Body/html elements)
+                     Float where it is, and stay fixed even when you *scroll*
+
 -------------------------Links to helper generators etc..---------------------------------------------
 https://www.google.com/fonts/ -> to import and  use different kind of fonts in your system; to import '@import url('link for font')' e.g @import url(https://fonts.googleapis.com/css?family=Dancing+Script);
 http://cssreset.com/ -> website where you can find how to properly fully reset each elements.
