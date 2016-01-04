@@ -17,7 +17,7 @@
             color:white;
             font-size: 50px;
             text-align: center;
-            text-shadow: 4px 4px 0 rgba(0,0,0,0.1);
+            text-shadow: 4px 4px 0 rgba(0,255,0,0.3);
             padding: 10px;
         }
         .box1{background-color:red;}
@@ -182,14 +182,50 @@
         }
     </style>-->
 <!--flex-grow,flex-shrink,flex-basis vid 11 -->
-    <style>
+    <!-- only works on the row tha they are on!! don't have effect on item before or after
+        flex-grow: when we have extra space, how should we devide it amongs everyone along the same line
+        flex-shrink:how much of myself should I give up; how do we slim ourself down when their is not enough space for all of us
+        flex-basis: (ideal space) how high should the element be when switching our axis
+    -->
+  <!--  <style>
         .container{
+            border: 3px solid goldenrod;
             display: flex;
         }
-        .box{
+        .box1{
+            /*flex:1 -> is a short hand for setting flex-grow:1 and flex-shrink:1 */
+            /*flex-grow:10;*/
+            /*flex-shrink:5;*/
+            /*flex-basis:400px;*/
+            flex: 10 5 400px; /*grow shrink basis*/
+        }
+        .box2{
+            flex-basis:400px;
+        }
+
+    </style>-->
+
+<!--    <style>
+        .container{
+            border: 3px solid goldenrod;
+            display: flex;
+            flex-wrap: wrap;
 
         }
-    </style>
+        .box{
+            flex-basis:400px;
+            flex-grow: 1;
+        }
+        .box3{
+            flex-grow: 10;
+
+        }
+
+    </style>-->
+
+<!--Cross Browser Flexbox Support + Autoprefixer vid 13>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+    <!--https://www.youtube.com/watch?v=qBvW8KC9bb4&index=2&list=PLu8EoSxDXHP7xj_y6NIAhy0wuCd4uVdid-->
+
 
 </head>
 <body>

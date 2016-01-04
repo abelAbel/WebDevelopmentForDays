@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- If IE use the latest rendering engine -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Set the page to the width of the device and set the zoon level -->
+    <meta name="viewport" content="width = device-width, initial-scale = 1"> <!--make sure it is consitence with any device-->
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+</head>
+<body>
+    <!--class:container -> for fixed width
+    class:container-fluid -> take up entire width of device-->
+
+<!--Grid system - vid 2>>>>>>>>>>>>>>-->
+    <!--column:12 max, can do grouping-->
+    <!--When using grid syterm their are 4 classes:
+    xs(phone):extra small;
+    sm(tablet):small;
+    md(Desktop/laptop):medium;
+    lg(larger desktop):large
+    relates to what device are designing for-->
+
+    <!--3 column going to take up the entire width of screen-->
+<!--    <div class="container" style="border:2px solid gold">
+        <h1> 3 column layout</h1>
+        &lt;!&ndash;when make column have to go inside rows&ndash;&gt;
+        <div class="row">
+            <div class="col-md-4" style="background: red">Left</div>&lt;!&ndash;making regular column spanning 4 columns&ndash;&gt;
+            <div class="col-md-4" style="background: green">Midle</div>
+            <div class="col-md-4" style="background: blue">Right</div>
+        </div>
+    </div>-->
+
+<!--Text Styling - vid 3 >>>>>>>>>>>>>>-->
+<!--
+    <div class="container">
+
+        <br>
+        &lt;!&ndash; highlighting &ndash;&gt;
+        <p>You can highlight text with the
+            <mark>mark tags</mark>
+            if you want.
+        </p>
+
+        &lt;!&ndash; quotes &ndash;&gt;
+        <blockquote>
+            <p>Sometimes I wet the bed. On purpose.</p>
+            <footer>My Grandpa</footer>
+        </blockquote>
+
+        &lt;!&ndash; lists &ndash;&gt;
+        <h4>Things to do when you're bored</h4>
+        <dl>
+            <dt>Indoors</dt>
+            <dd>- take a nap</dd>
+            <dd>- watch Netflix for 8 hours</dd>
+            <dt>Outdoors</dt>
+            <dd>- go back inside</dd>
+        </dl>
+
+        &lt;!&ndash; code &ndash;&gt;
+        <p>To set the users weight use <code>setUserWeight(374);</code> with an integer</p>
+
+        &lt;!&ndash; multi line code &ndash;&gt;
+        <p>For multiple lines of code, use the pre element:</p>
+<pre>&lt;!&ndash;indentation sensitive&ndash;&gt;
+for n in range(101):
+    if(n % 4 is 0):
+        print(n)
+</pre>
+
+        &lt;!&ndash; keyboard input &ndash;&gt;
+        <p>This is supposed to define keyboard input <kbd>Ctrl+Alt+Del</kbd></p>
+
+        &lt;!&ndash; contextual colors &ndash;&gt;
+        <h4>Provides build in text color classes for different events</h4>
+        <p class="text-muted">This text is muted.</p>
+        <p class="text-success">This text indicates success.</p>
+        <p class="text-danger">This text represents danger.</p>
+
+        &lt;!&ndash; background colors &ndash;&gt;
+        <p class="bg-success">This text indicates success.</p>
+        <p class="bg-danger">This text represents danger.</p>
+
+    </div>
+-->
+<!--Tables - vid 4 >>>>>>>>>>>>>>-->
+    <!--<div class="container">
+
+        <h2>Simple Table</h2>
+        <table class="table">
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Points</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Bucky Roberts</td>
+                <td>74</td>
+                <td>8,760</td>
+            </tr>
+            <tr>
+                <td>Turd McGurd</td>
+                <td>13</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>Chchchch Idunno</td>
+                <td>18</td>
+                <td>32</td>
+            </tr>
+            </tbody>
+        </table>
+
+        <h2>Condensed Table</h2>
+        <table class="table table-condensed">
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Points</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Bucky Roberts</td>
+                <td>74</td>
+                <td>8,760</td>
+            </tr>
+            <tr>
+                <td>Turd McGurd</td>
+                <td>13</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>Chchchch Idunno</td>
+                <td>18</td>
+                <td>32</td>
+            </tr>
+            </tbody>
+        </table>
+
+        <h2>Striped Table</h2>
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Points</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Bucky Roberts</td>
+                <td>74</td>
+                <td>8,760</td>
+            </tr>
+            <tr>
+                <td>Turd McGurd</td>
+                <td>13</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>Chchchch Idunno</td>
+                <td>18</td>
+                <td>32</td>
+            </tr>
+            </tbody>
+        </table>
+
+    </div>-->
+
+<!--Responsive Image and Video - vid 5 >>>>>>>>>>>>>>-->
+  <!--  <div class="container">
+
+        &lt;!&ndash; rounded corners &ndash;&gt;
+        <img src="https://www.thenewboston.com/photos/users/2/resized/2463a86fdf42a1681c66ba8fd6789f9d.jpg" class="img-rounded" width="230" height="230">
+
+        &lt;!&ndash; circle &ndash;&gt;
+        <img src="https://www.thenewboston.com/photos/users/2/resized/2463a86fdf42a1681c66ba8fd6789f9d.jpg" class="img-circle" width="230" height="230">
+
+        &lt;!&ndash; responsive vs non responsive &ndash;&gt;
+        <img src="https://www.thenewboston.com/photos/users/2/resized/b108418bc888d29763bacbc36d830518.jpg" class="img-responsive">
+        <img src="https://www.thenewboston.com/photos/users/2/resized/b108418bc888d29763bacbc36d830518.jpg">
+
+        &lt;!&ndash; embed responsive videos &ndash;&gt;
+        <div class="embed-responsive embed-responsive-16by9"> &lt;!&ndash;'16by9' whatever I stick in this div give it a proportion of 16by9&ndash;&gt;
+            <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/-u-j7uqU7sI"></iframe> &lt;!&ndash;get the id of your video '-u-j7uqU7sI'&ndash;&gt;
+        </div>
+
+    </div>-->
+
+<!--Navbar - vid 6 >>>>>>>>>>>>>>-->
+<!--    <nav class="navbar navbar-default"> &lt;!&ndash;'navbar' saying we are making a navbar; 'navbar-default' saying the styling of it&ndash;&gt;
+        <div class="container-fluid">
+
+            &lt;!&ndash; Logo &ndash;&gt;
+            <div class="navbar-header"> &lt;!&ndash;makes it know it is not a button and is a logo&ndash;&gt;
+                <a href="#" class="navbar-brand">THENEWBOSTON</a>&lt;!&ndash;'navbar-brand' gives the styling&ndash;&gt;
+            </div>
+
+            &lt;!&ndash; Menu Items &ndash;&gt;
+            <div>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li> &lt;!&ndash;'active' higlight buton on, only one at a time &ndash;&gt;
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>-->
+
+<!--Dropdown Menu - vid 7 >>>>>>>>>>>>>>-->
+<!--    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+
+            &lt;!&ndash; Logo &ndash;&gt;
+            <div class="navbar-header">
+                <a href="#" class="navbar-brand">THENEWBOSTON</a>
+            </div>
+
+            &lt;!&ndash; Menu Items &ndash;&gt;
+            <div>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+
+                    &lt;!&ndash; drop down menu &ndash;&gt;
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">My Profile <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Friends</a></li>
+                            <li><a href="#">Photos</a></li>
+                            <li><a href="#">Settings</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                &lt;!&ndash;right align &ndash;&gt;
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Logout</a></li>
+                </ul>
+
+            </div>
+
+        </div>
+    </nav>-->
+
+<!--Navbar Toggle Button - vid 8 >>>>>>>>>>>>>>-->
+<!--
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+
+            &lt;!&ndash; Logo &ndash;&gt;
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavBar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="#" class="navbar-brand">THENEWBOSTON</a>
+            </div>
+
+            &lt;!&ndash; Menu Items &ndash;&gt;
+            <div class="collapse navbar-collapse" id="mainNavBar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+-->
+
+<!--Wells and Alert Boxes - vid 9 >>>>>>>>>>>>>>-->
+    <!--<div class="container">
+
+        <h2>Wells are sections with border and grey background</h2>
+
+        <div class="well">Basic Well</div>
+        <div class="well well-sm">Small Well</div>
+
+        <div class="alert alert-success">
+            Congratulations, you just won the game!
+        </div>
+
+        &lt;!&ndash; to make the alert closable &ndash;&gt;
+        <div class="alert alert-info">
+            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+            Don't forget Kelly's birthday is today!
+        </div>
+
+        &lt;!&ndash; add the fade and in class to animate when closing &ndash;&gt;
+        <div class="alert alert-danger fade in">
+            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+            Are you sure you want to delete your account?
+        </div>
+
+    </div>-->
+
+<!--Different Device Layout - vid 12 >>>>>>>>>>>>>>-->
+<!--    <div class="container-fluid">
+
+        <h3>Phone entire with(12), desktop 1/2(6)</h3>
+        <div class="row">
+            <div class="row">
+                <div class="col-xs-12 col-md-6" style="background-color: lightblue">1/3 desktop, 1/2 mobile</div>
+                <div class="col-xs-12 col-md-6" style="background-color: lightgreen">1/3 desktop, 1/2 mobile</div>
+                <div class="col-xs-12 col-md-6" style="background-color: lightcoral">1/3 desktop, 1/2 mobile</div>
+            </div>
+        </div>
+
+        <h3>Entire width on larger devices, 1/2 on small ones</h3>
+        <div class="row">
+            <div class="col-md-12 col-xs-6">
+                <p>Curabitur tellus diam, pharetra quis libero sit amet, finibus suscipit diam. Etiam felis dui, fermentum in est congue, tempus efficitur enim. Donec vitae venenatis neque, vel commodo ipsum. Etiam quis tellus tortor. Morbi porttitor tempor mauris in facilisis. Aliquam eget sapien consequat, finibus lectus nec, pulvinar justo. Mauris in consectetur lacus, in luctus turpis. Aenean eget velit ipsum. Sed elit enim, ullamcorper ac orci ac, fringilla interdum est. Praesent nec nisi ultrices lorem ullamcorper congue. Vivamus sed gravida metus, ut auctor nisl. Aliquam sollicitudin fringilla justo id facilisis.</p>
+            </div>
+        </div>
+
+
+        <h3>Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop</h3>
+        <div class="row">
+            <div class="row">
+                <div class="col-xs-6 col-md-4" style="background-color: lightblue">1/3 desktop, 1/2 mobile</div>
+                <div class="col-xs-6 col-md-4" style="background-color: lightgreen">1/3 desktop, 1/2 mobile</div>
+                <div class="col-xs-6 col-md-4" style="background-color: lightcoral">1/3 desktop, 1/2 mobile</div>
+            </div>
+        </div>
+
+
+        <h3>Offsetting Columns</h3>
+        <div class="row">
+            <div class="col-md-4" style="background-color: lightblue">4 wide</div>
+        </div>
+        <div class="row"> &lt;!&ndash;**the offset took 2 of the 12 columns that you have&ndash;&gt;
+            <div class="col-md-4 col-md-offset-2" style="background-color: lightcoral">4 wide offset 2</div>
+        </div>
+
+
+        <h3>Nested Rows</h3>
+        <div class="row">
+            <div class="col-md-9" style="background-color: lightseagreen; padding: 30px;">
+
+                I am the main parent
+                &lt;!&ndash;Each time make new row you have 12 columns&ndash;&gt;
+                &lt;!&ndash; to nest, add a new row (don't exceed 12 columns) &ndash;&gt;
+                <div class="row">&lt;!&ndash;Each time make new row you have 12 columns&ndash;&gt;
+                    <div class="col-md-8" style="background-color: lightblue">
+                        child 1
+                    </div>
+                    <div class="col-md-4" style="background-color: lightsalmon">
+                        child 2
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>-->
+
+<!--Push and Pull - vid 13 >>>>>>>>>>>>>>-->
+    <!--<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <title>thenewboston</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+
+    <div class="container-fluid">
+
+        <h3>Push and pull</h3>
+
+        <div class="row">
+
+            &lt;!&ndash;
+                col-md-push-5 = move right 5 columns on md or greater (stay same for sm)
+                else just show as normal
+            &ndash;&gt;
+            <div class="col-md-5 col-md-push-5" style="background: lightgreen">
+                Content A - MAIN BANNER
+            </div>
+
+            &lt;!&ndash; col-md-pull-5 = move left 5 columns &ndash;&gt;
+            <div class="col-md-5 col-md-pull-5" style="background: lightcoral">
+                Content B
+            </div>
+
+            <div class="col-md-2" style="background: lightblue">
+                Content C
+            </div>
+
+        </div>
+    </div>
+
+    </body>
+    </html>
+-->
+
+<!--Login Modal (pop up windows) - vid 14 >>>>>>>>>>>>>>-->
+    <div class="container">
+
+        <h3>Log In Demo</h3>
+
+        <!-- data-toggle lets you display modal without any JavaScript -->
+        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#popUpWindow">Open Modal</button>
+
+        <div class="modal fade" id="popUpWindow">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <!-- header -->
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h3 class="modal-title">Log In</h3>
+                    </div>
+
+                    <!-- body (form) -->
+                    <div class="modal-body">
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" placeholder="Password">
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- button -->
+                    <div class="modal-footer">
+                        <button class="btn btn-primary btn-block">Submit</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> <!--standard jQuery-->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+</html>

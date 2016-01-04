@@ -1,1 +1,3 @@
 css-trick flex -> https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+cross browser flexbox -> https://css-tricks.com/old-flexbox-and-new-flexbox/
+fill out the cross browser needed prefix-> http://autoprefixer.github.io/
