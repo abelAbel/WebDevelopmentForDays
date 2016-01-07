@@ -19,9 +19,11 @@ http://codepen.io/ -> code and see live update
 normalize->     <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
 https://cdnjs.com/ -> to ge cdnjs links
 http://www.copypastecharacter.com/ -> has charater you can copy and paste in code, (smiley, bars etc..)
-http://shariarbd.com/2014/07/create-css3-hexagon/ -> hexagon shape
+http://iconmonstr.com/ -> icons too
+http://shariarbd.com/2014/07/create-css3-hexagon/ -> hexagon shape via css
 https://www.google.com/search?q=validate+css&oq=validate+css&aqs=chrome..69i57.3814j0j7&sourceid=chrome&es_sm=119&ie=UTF-8-> validate the css to make sure it work with all browser
 https://github.com/stowball/jQuery-rwdImageMaps->JQuery plugin for map
+map tutorial ->http://www.html-5-tutorial.com/map-and-area-elements.htm
 ----------------Tags(elements)------------------------
 <br/> -> like pressing enter
 <hr/> -> makes horizontal line
