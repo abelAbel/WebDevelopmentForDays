@@ -6,14 +6,19 @@
     <style>
 
         img{
-            transition: all 1s;
-            transform: scale(1);
+            /*transition: all 1s;*/
+            transition: transform 1s ;
+            transform: scale(0.5);
+            /*background-color: yellow;*/
         }
         #polygon2{
             position: absolute;
         }
-            .zooming{
-            transform:scale(.5);
+        .zooming{
+            transform:scale(.85);
+        }
+        .zooming-spinning{
+            transform:scale(.85) rotate(180deg);
         }
     </style>
 </head>
@@ -40,7 +45,9 @@
 //            });
 
         $('area').hover(function(e){
-            $("img#polygon[usemap]").toggleClass('zooming');
+//            $("img#polygon[usemap]").toggleClass('zooming');
+            $("img#polygon[usemap]").toggleClass('zooming-spinning');
+            $("img#polygon2").attr("src","iconmonstr-hexagon-2-240-blue.png");
             /*$("img[usemap]").toggleClass('zooming')*/
             /* $("img[usemap]").css({
              transform:"scale(.5)",
