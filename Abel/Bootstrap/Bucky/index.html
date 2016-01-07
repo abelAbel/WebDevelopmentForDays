@@ -193,7 +193,7 @@ for n in range(101):
 <!--Responsive Image and Video - vid 5 >>>>>>>>>>>>>>-->
     <div class="container">
 
-        <img src="iconmonstr-hexagon-2-240.png" width="240" height="210" border="0" usemap="#map" />
+        <img id ="polygon1"src="iconmonstr-hexagon-2-240.png" width="240" height="210" border="0" usemap="#map" />
 
         <map name="map">
             <!-- #$-:Image map file created by GIMP Image Map plug-in -->
@@ -201,7 +201,7 @@ for n in range(101):
             <!-- #$-:Please do not edit lines starting with "#$" -->
             <!-- #$VERSION:2.3 -->
             <!-- #$AUTHOR:Abel Amadou -->
-            <area id ="polygon" shape="poly" coords="70,18,169,19,217,105,168,191,70,190,22,104"  href="#" />
+            <area  shape="poly" coords="70,18,169,19,217,105,168,191,70,190,22,104"  href="#" />
         </map>
 
 
@@ -212,7 +212,14 @@ for n in range(101):
         <img src="https://www.thenewboston.com/photos/users/2/resized/2463a86fdf42a1681c66ba8fd6789f9d.jpg" class="img-circle" width="230" height="230">
 
         <!-- responsive vs non responsive -->
-        <img src="https://www.thenewboston.com/photos/users/2/resized/b108418bc888d29763bacbc36d830518.jpg" class="img-responsive">
+        <!--<img src="bucky.jpg" class="img-responsive">-->
+        <img id ="polygon2"src="bucky.jpg" class="img-responsive" width="677" height="507" border="0" usemap="#map2" /> <!--or <img src="bucky.jpg" class="img-responsive" border="0" usemap="#map2" />-->
+
+        <map name="map2">
+            <area shape="poly" coords="302,164,294,181,306,189,320,175,306,154" href="http://www.google.com" />
+        </map>
+
+
         <img src="https://www.thenewboston.com/photos/users/2/resized/b108418bc888d29763bacbc36d830518.jpg">
 
         <!-- embed responsive videos -->
@@ -495,12 +502,12 @@ for n in range(101):
 
 
     <!--for map-->
-    <!--<script src="mapResponsivePlug.js"></script>-->
+    <script src="mapResponsivePlug.js"></script>
     <script>
 
         $(document).ready(function(e) {
             $('img[usemap]').rwdImageMaps();
-
+            $('#polygon2').rwdImageMaps();
 //            $('area').on('click', function() {
 //                alert($(this).attr('alt') + ' clicked');
 //            });
@@ -513,5 +520,6 @@ for n in range(101):
             });
         });
     </script>
+
 </body>
 </html>
